@@ -346,4 +346,140 @@ a {
     margin: .5rem 0 1rem 0;
 }
 
+/* Section Progress */
+.progress {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1.2rem 2.8rem 1.2rem;
+}
+
+.progress-global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.progress-global-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 1.7rem 1.5rem;
+    margin-left: .5rem;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 1.5rem;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.progress-global-item-number {
+    position: absolute;
+    left: -.7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    background: #9356DC;
+    color: white;
+    font-size: .9rem;
+}
+
+.progress-global-item-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.progress-global-item-desc-icon {
+    margin: 0 1.5rem 0 .7rem;
+    color: #7e7e7e;
+    font-size: 1.3rem;
+}
+
+.progress-global-item-desc-text {
+    font-weight: 700;
+}
+
+/* Section restaurant */
+.restaurant {
+    background: #f6f6f6;
+    padding: 0 1.2rem 3rem;
+}
+
+.restaurant-global {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.restaurant-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1rem;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.restaurant-card-img {
+    width: 100%;
+    height: 180px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.restaurant-card-desc {
+    padding: .8rem 1rem;
+}
+
+.restaurant-card-name {
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.5rem;
+}
+
+.restaurant-card-name span {
+    text-transform: uppercase;
+}
+
+.restaurant-card-ville {
+    font-size: 1rem;
+}
+
+.restaurant-card-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.flag-new {
+    background: #99E2D0;
+    color: #008766;
+    font-weight: 700;
+    border-radius: .2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .2rem .8rem;
+}
 
