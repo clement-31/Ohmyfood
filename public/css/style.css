@@ -483,3 +483,18 @@ a {
     padding: .2rem .8rem;
 }
 
+/* Hover */
+.progress-global-item:hover {
+    background: #f2eafb;
+}
+
+.progress-global-item:hover .progress-global-item-desc-icon {
+    color: #9356DC;
+}
+
+.restaurant-card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
