@@ -417,6 +417,7 @@ a {
     font-weight: 700;
 }
 
+
 /* Section Restaurant */
 .restaurant {
     background: #f6f6f6;
@@ -840,3 +841,130 @@ h1 > span {
         background: white;
     }
 }
+
+
+/* Keyframes */
+
+/* Animation du loader de la page d'accueil */
+@-webkit-keyframes load-wrapper {
+    0% {
+        opacity: 1;
+        z-index: 2;
+    }
+    70% {
+        opacity: 1;
+    }
+    99% {
+        z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+@keyframes load-wrapper {
+    0% {
+        opacity: 1;
+        z-index: 2;
+    }
+    70% {
+        opacity: 1;
+    }
+    99% {
+        z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+/* Animation des pages dans le loader */
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: perspective(600px) rotateY(0deg);
+        transform: perspective(600px) rotateY(0deg);
+    }
+    20% {
+        background: #8845d9;
+    }
+    29.9% {
+        background: #9356dc;
+    }
+    30% {
+        -webkit-transform: perspective(200px) rotateY(-90deg);
+        transform: perspective(200px) rotateY(-90deg);
+    }
+    55% {
+        opacity: 1;
+    }
+    59.9% {
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: perspective(600px) rotateY(-180deg);
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    100% {
+        -webkit-transform: perspective(600px) rotateY(-180deg);
+        transform: perspective(600px) rotateY(-180deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        -webkit-transform: perspective(600px) rotateY(0deg);
+        transform: perspective(600px) rotateY(0deg);
+    }
+    20% {
+        background: #8845d9;
+    }
+    29.9% {
+        background: #9356dc;
+    }
+    30% {
+        -webkit-transform: perspective(200px) rotateY(-90deg);
+        transform: perspective(200px) rotateY(-90deg);
+    }
+    55% {
+        opacity: 1;
+    }
+    59.9% {
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: perspective(600px) rotateY(-180deg);
+        transform: perspective(600px) rotateY(-180deg);
+    }
+    100% {
+        -webkit-transform: perspective(600px) rotateY(-180deg);
+        transform: perspective(600px) rotateY(-180deg);
+    }
+}
+
+/* Animation des plats */
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
