@@ -60,9 +60,18 @@ td:not([align]), th:not([align]) {
     align-items: center;
 }
 
+/* Shadow */
+.button, .progress-global-item, .restaurant-card {
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover::before, .progress-global-item:hover, .restaurant-card:hover {
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
 
 /* Layouts */
-
 header {
     position: relative;
 }
@@ -136,7 +145,6 @@ header {
 
 
 /* Titres des menus  */
-
 .entrance, .meal, .dessert {
     padding: 1.5rem 2rem 0;
     position: relative;
@@ -160,7 +168,6 @@ header {
 
 
 /* Composants */
-
 .heart {
     position: relative;
     z-index: 1;
@@ -322,7 +329,7 @@ a {
 }
 
 
-/* Section Presentation */
+/* Section Présentation */
 .presentation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -410,7 +417,7 @@ a {
     font-weight: 700;
 }
 
-/* Section restaurant */
+/* Section Restaurant */
 .restaurant {
     background: #f6f6f6;
     padding: 0 1.2rem 3rem;
@@ -498,3 +505,338 @@ a {
 }
 
 
+/* Général */
+h1 > span {
+    text-transform: uppercase;
+}
+
+/* Section Hero*/
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2rem 2rem .7rem;
+    background: #f6f6f6;
+    font-family: "Shrikhand", cursive;
+    font-size: 1.7rem;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+}
+
+/* Section Menu */
+.menu {
+    background: #f6f6f6;
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.item {
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    padding: .8rem;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.item-subtitle {
+    font-size: .9rem;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-subtitle .price {
+    font-size: .9rem;
+    font-weight: 700;
+    position: absolute;
+    right: 1rem;
+    bottom: .8rem;
+}
+
+.item-icon {
+    background-color: #99E2D0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 0%;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.item-icon .fa-check-circle {
+    opacity: 0;
+    color: white;
+    font-size: 1.2rem;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+
+/* Bloc Entrées */
+.entrance {
+    -webkit-animation: slideUp 1000ms  ease-in-out both;
+    animation: slideUp 1000ms  ease-in-out both;
+}
+
+.entrance1 {
+    -webkit-animation: slideUp 1000ms .2s ease-in-out both;
+    animation: slideUp 1000ms .2s ease-in-out both;
+}
+
+.entrance2 {
+    -webkit-animation: slideUp 1000ms .4s ease-in-out both;
+    animation: slideUp 1000ms .4s ease-in-out both;
+}
+
+.entrance3 {
+    -webkit-animation: slideUp 1000ms .6s ease-in-out both;
+    animation: slideUp 1000ms .6s ease-in-out both;
+}
+
+.entrance4 {
+    -webkit-animation: slideUp 1000ms .7s ease-in-out both;
+    animation: slideUp 1000ms .7s ease-in-out both;
+}
+
+/* Bloc Plats */
+.meal {
+    -webkit-animation: slideUp 1000ms .8s ease-in-out both;
+    animation: slideUp 1000ms .8s ease-in-out both;
+}
+
+.meal1 {
+    -webkit-animation: slideUp 1000ms 1s ease-in-out both;
+    animation: slideUp 1000ms 1s ease-in-out both;
+}
+
+.meal2 {
+    -webkit-animation: slideUp 1000ms 1.2s ease-in-out both;
+    animation: slideUp 1000ms 1.2s ease-in-out both;
+}
+
+.meal3 {
+    -webkit-animation: slideUp 1000ms 1.4s ease-in-out both;
+    animation: slideUp 1000ms 1.4s ease-in-out both;
+}
+
+/* Bloc dessert */
+.dessert {
+    -webkit-animation: slideUp 1000ms 1.6s ease-in-out both;
+    animation: slideUp 1000ms 1.6s ease-in-out both;
+}
+
+.dessert1 {
+    -webkit-animation: slideUp 1000ms 1.8s ease-in-out both;
+    animation: slideUp 1000ms 1.8s ease-in-out both;
+}
+
+.dessert2 {
+    -webkit-animation: slideUp 1000ms 2s ease-in-out both;
+    animation: slideUp 1000ms 2s ease-in-out both;
+}
+
+.dessert3 {
+    -webkit-animation: slideUp 1000ms 2.2s ease-in-out both;
+    animation: slideUp 1000ms 2.2s ease-in-out both;
+}
+
+/* Hover */
+.item:hover .check-container {
+    -webkit-transform: translate(0px);
+    transform: translate(0px);
+}
+
+.item:hover .check-icon {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+
+.item:hover .item-icon {
+    width: 15%;
+}
+
+.item:hover .fa-check-circle {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+/* Responsive Footer */
+@media screen and (min-width: 768px) {
+    .footer-global {
+        width: 95%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+}
+
+
+/* Responsive Page d'accueil (tablette et desktop) */
+@media screen and (min-width: 768px) {
+    .title {
+        text-align: center;
+    }
+    .progress {
+        padding-top: 1rem;
+    }
+    .progress-global {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .progress-global-item {
+        width: calc(50% - 1.5rem);
+        padding: .5rem 1.5rem;
+        margin-right: 1rem;
+    }
+    .progress-global-item:nth-child(2) {
+        margin-right: 0;
+    }
+    .restaurant {
+        padding-top: 1rem;
+    }
+    .restaurant-global {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .restaurant-card {
+        margin-right: 1rem;
+        width: calc(50% - .5rem);
+    }
+    .restaurant-card:nth-child(2), .restaurant-card:nth-child(4) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .progress {
+        padding: 0 0 2.8rem 0;
+    }
+    .progress-global-item {
+        width: calc(33% - 1.5rem);
+    }
+    .progress-global-item:nth-child(2) {
+        margin-right: 1rem;
+    }
+    .progress-global-item:nth-child(3) {
+        margin-right: 0;
+    }
+    .restaurant-card {
+        width: calc(33% - .5rem);
+    }
+    .restaurant-card:nth-child(2) {
+        margin-right: 1rem;
+    }
+    .restaurant-card:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurant-card {
+        width: calc(25% - .8rem);
+    }
+    .restaurant-card:nth-child(2), .restaurant-card:nth-child(3) {
+        margin-right: 1rem;
+    }
+    .restaurant-card:nth-child(4) {
+        margin-right: 0;
+    }
+}
+
+/* Responsive Page restaurant (desktop)*/
+@media screen and (min-width: 992px) {
+    .hero-title {
+        position: relative;
+        background: white;
+    }
+    .menu {
+        background: white;
+    }
+}
