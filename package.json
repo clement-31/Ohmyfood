@@ -4,7 +4,7 @@
   "description": "projet3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "./node_modules/.bin/sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/clement-31/ClementLasnier_3_15012021/issues"
   },
-  "homepage": "https://github.com/clement-31/ClementLasnier_3_15012021#readme"
+  "homepage": "https://github.com/clement-31/ClementLasnier_3_15012021#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
 }
