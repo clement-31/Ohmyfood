@@ -1,0 +1,65 @@
+.header__img img{
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.menu__header {
+  @include menu-header;
+}
+.arrow {
+  position: absolute;
+  left: 20px;
+}
+.menu__title {
+  @include menu-title;
+  @include desktop {
+    padding: 10px 90px;
+  }
+}
+.meals {
+  @include meals;
+}
+.last__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.5em;
+}
+.last__line p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @include desktop {
+    padding-right: 20px;
+  }
+}
+.last__line span {
+  margin-right: 5px;
+}
+.meals h4 {
+  margin: 0;
+}
+.starter h3, .dish h3, .dessert h3 {
+  padding-left: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.btn__order button {
+  @include btn-about;
+  margin: 30px 0;
+  padding: 20px;
+  width: 50%;
+  @include desktop {
+    width: 25%;
+  }
+  &:hover {
+    background-color: lighten(#9356dc, 10%);
+    background-blend-mode: lighten;
+    box-shadow: 4px 4px 6px #000;
+  }
+}
+.btn__order {
+  display: flex;
+  justify-content: center;
+}
