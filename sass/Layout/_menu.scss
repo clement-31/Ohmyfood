@@ -1,0 +1,35 @@
+.main__menu {
+  @include main-menu;
+}
+.full__menu {
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.starter {
+  animation: fadein 3s ease-in-out;
+  @include desktop {
+    width: 400px;
+  }
+}
+.dish {
+  animation: fadein 6s ease-in-out;
+  @include desktop {
+    width: 400px;
+  }
+}
+.dessert {
+  animation: fadein 9s ease-in-out;
+  @include desktop {
+    width: 400px;
+  }
+}
+.cross {
+  @include cross;
+}
+.line {
+  width: 40px;
+  border: 2px solid $color-tertiary;
+  margin-left: 10px;
+}

@@ -1,0 +1,12 @@
+.howto__button {
+  @include howto-btn;
+  @include tablet {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @include desktop {
+    margin: 70px 0;
+  }
+}
