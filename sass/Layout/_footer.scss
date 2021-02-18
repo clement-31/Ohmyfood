@@ -1,52 +1,30 @@
-.footer{
-  background: $fond-gris-footer;
-
-  &-global{
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem 2rem;
-  }
-  &-logo{
-    font-family: $font-cursive;
-    color: white;
+footer {
+  background-color: #353535;
+  padding: 25px;
+  color: white;
+}
+  h3 {
+    font-family: "Shrikhand", "sans-serif";
+    padding: 5px 0 20px 0;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-weight: 500;
   }
+  ul {
+    list-style-type: none;
 
-  &-text{
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    color: white;
-    line-height: 1.5rem;
-    &-icon{
-      font-size: .8rem;
-      width: 1.5rem;
-    }
-  }
-}
-.footer-text:hover{
-  color: $color-secondary;
-  transition: .3s;
-}
+    li {
+      padding: 5px 0 5px 0;
 
-@media screen and (min-width:768px){
-  .footer{
-    &-global{
-      width: 95%;
-      flex-direction: row;
-      align-items: baseline;
-      justify-content: space-between;
-      padding: 1.5rem;
+      a {
+        color: white;
+      }
     }
   }
 
-}
-.fa-handshake {
-  transform: rotate(-45deg);
-}
-.fa-utensils {
-  padding-right: 5px;
-}
+    .fa-utensils {
+      margin-right: 12px;
+    }
+    .fa-hands-helping {
+      margin-right: 5px;
+    }
+
