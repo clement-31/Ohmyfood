@@ -30,8 +30,8 @@
 
 ## Technologies
 ***
-Autorisées : HTML, CSS, préprocesseur CSS (ex: Sass)
-Interdites : JavaScript, inline CSS
+* Autorisées : HTML, CSS, préprocesseur CSS (ex: Sass)
+* Interdites : JavaScript, inline CSS
 
 ### Identité graphique
 
